@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(237, 25, 60, 0.927);
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    overflow: hidden;
+    background-color: rgb(154, 70, 84);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 1px 10px 0px;
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 10px 25px;
+    margin: 0px 0px 0px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    cursor:grab;
+    z-index: 1;
+}
+nav a{
+    text-decoration: none;
+    list-style: none;  
+    margin:  auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+nav a:hover{
+    color: rgb(215, 167, 167);
+    border-bottom: 5px solid white;
+}
+
+/* 
+.home{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+    width: 100px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(157, 55, 72);
+    font-weight: 600;
+    border: 1px solid black;
+    transition: background-color .3s;
+}
+
+.home:hover{
+    background-color: rgb(157, 55, 72);
+    color: aliceblue;
+    border: none;
+} */
+body{
+    background-color: antiquewhite;
+    text-align: center;
+}
+@media only screen and (max-width:700px){
+    .subchild .bedio{
+        width: 300px;
+    }
+}
+
+.title{
+    padding-top: 50px;
+    font-size: 40px;
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+    color: rgb(69, 67, 67);
+}
+.child{
+    text-align: center;
+    background-color: pink;
+    color: rgb(127, 37, 67);
+    margin: 20px;
+}
+.child h1{
+    font-size: 30px;
+}
+.subchild{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+    /* background-color: rgba(176, 48, 123, 0.809); */
+}
+.subchild div{
+    padding: 5px;
+    margin: 10px;
+    width:250px;
+    text-align: justify;
+}
+
+.subchild div img{
+    border-left: 5px solid rgb(127, 37, 67);
+    border-right: 5px solid rgb(127, 37, 67);
+    margin-top: px;
+}
+div p.image{
+    /* position: absolute; */
+    
+    right: 0px;
+}
+.bedio{
+    background-color: rgb(171, 75, 91);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+}
+.bedio a{
+    background-color: pink;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color:  rgb(171, 75, 91);;
+}
+.bedio a:hover{
+    color:rgb(88, 85, 85);
+}
+iframe{
+    border-left: 5px solid pink;
+    border-right: 5px solid pink;
+    width:560px;
+    height:315px; 
+}
+
+.footer{
+    background-color: gray;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px;
+}

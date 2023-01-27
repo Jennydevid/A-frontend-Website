@@ -1,0 +1,304 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    /* background-color: rgb(202, 110, 125); */
+    /* background-image:linear-gradient(to bottom right,rgb(202, 110, 125),rgb(208, 171, 112)); */
+    background-color: rgb(217, 128, 143);
+    /* background-color: rgba(0, 128, 0, 0.461); */
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    
+ }
+.title{
+    margin: 0px; 
+    padding: 35px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: pink;
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to bottom, rgb(178, 20, 83), rgba(188, 20, 87, 0.563));
+} 
+nav{
+    background-color: rgb(188, 20, 87);
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+    padding:20px;
+    margin: 0px 0px 0px;
+    display:flex;
+    /* position: fixed; */
+}
+nav .navigation{
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px; 
+    padding: 20px;
+    transition: border-top .2s;
+}
+.dropdown:hover .navigation{
+    color:grey;
+    border-top: 5px solid white;
+}
+
+.dropdown{
+    position:relative;
+    margin:auto;
+}
+.dropdown ul{
+    background-color: rgb(210, 221, 225);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 20px 0px black;
+    padding:10px;
+    text-align: left;
+    width: 250px;
+    position: absolute;
+    left:0px;
+    z-index: 1;
+    display: none;
+    transition: display 1s;
+}
+.dropdown:hover ul{
+    display: block;
+    /* visibility: visible; */
+}
+/* .sliding{
+    overflow: hidden;
+    animation: sliding 4s infinite;
+    text-align: justify;
+}
+@keyframes sliding{
+    0%{
+        position: relative;
+        left: 0px;
+    }
+    10%{
+        position: relative;
+        left: 100px;
+    }
+    20%{
+        position: relative;
+        left: 200px;
+    }
+    30%{
+        position: relative;
+        left: 300px;
+    }
+    40%{
+        position: relative;
+        left: 400px;
+    }
+    50%{
+        position: relative;
+        left: 500px;
+    }
+    60%{
+        position: relative;
+        left: 600px;
+    }
+    70%{
+        position: relative;
+        left: 800px;
+    }
+} */
+
+ul li{
+    /* list-style-position: inside; */
+    padding-right:20px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul :hover a{
+    color: rgb(114, 64, 72);
+}
+
+.cont1{
+    /* position: relative; */
+    margin:40px;
+}
+p:first-child  {
+    font-size:20px;
+}
+.main{
+    margin:0px;
+    /* border-radius: 15px; */
+    position: relative;
+    background-color:rgba(137, 32, 50, 0.497) ;
+    /* background-color: rgba(0, 0, 0, 0.587); */
+}
+
+.textOver{
+    position: absolute;
+    padding:20px;
+    width:70%;
+    top:40%;
+    left:15%;
+    font-size: 40px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.38);
+    z-index: 1;
+}
+
+.subheading{
+    color:rgb(83, 10, 22);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child{
+    width: 308px;
+    margin:20px;
+    text-align: left;
+    color:white;
+    background-color:rgb(179, 71, 89);
+    border-radius: 0px 0px 40px 40px;
+    border: 5px solid white;
+    box-shadow: 5px 10px 8px rgba(208, 91, 111, 0.755);
+    transition: margin-top 1s, box-shodow 1s;
+    cursor: pointer;
+}
+.child:hover{
+    margin-top: 15px;
+    box-shadow: 5px 10px 10px rgba(175, 44, 65, 0.755);
+}
+.child img{
+    width:300px;
+}
+
+
+.child h2{
+    padding-left: 30px;
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.child ul{
+    font-size: 20px;
+    list-style: none;
+    list-style-position:inherit;
+    margin-left: 0px;
+}
+
+.child4{
+    margin: 20px;
+    color: aliceblue;
+    border-radius: 50px;
+    box-shadow: 0px 0px 24px 5px rgb(70, 14, 23);
+}
+
+.one{
+    background-color: rgba(113, 20, 35, 0.935);
+    color: wheat;
+    border-radius: 50px 50px 0px 0px ;
+}
+
+.two{
+    background-color: rgb(168, 45, 65);
+    color: wheat;
+}
+
+.three{
+    background-color:rgba(182, 46, 69, 0.713) ;
+}
+
+.four{
+    background-color:rgba(182, 46, 69, 0.489) ;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.child4 div{
+    margin-top: 0px;
+    padding: 20px;
+    font-size:20px;
+    
+}
+.child4 h1{
+    font-size: 30px;
+    color: white;
+    margin: auto;
+}
+
+.child4 div p a{
+    background-color: rgba(5, 5, 5, 0.363);
+    color:white;
+    text-transform: capitalize;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+.child4 div p a:hover{
+    color:rgb(32, 136, 136) ;
+}
+.child4 div img{
+    margin: 10px;
+    border-top:5px solid white;
+    border-bottom:5px solid white; 
+    transition: transform .5s, border-radius 0.5s, box-shadow 1s ;
+    cursor: pointer;
+    /* border-radius: 40px 0px 40px 0px ; */
+}
+
+.child4 div img:hover{
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px  gray;
+    transform: scale(1.08);
+}
+    
+
+.footer{
+    height:240px;
+    background-color:rgba(137, 32, 50, 0.934) ;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+.footer div{
+    margin: 10px;
+    font-size: 20px;
+}
+.footer div h3{
+    text-transform: uppercase;
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+}
+.footer div li, .footer div h3{
+    display: block;
+    text-decoration: none;
+    color: beige;
+}
+.footer div li:hover{
+    color: rgb(255, 179, 0);
+}
+.btn{
+    background-color: beige;
+    box-shadow: 0px 1px 10px 0px black;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(189, 59, 81);
+    font-family: 'Righteous', 'cursive' !important;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    width: 200px;
+    padding: 15px;
+}
+.btn:hover{
+    color: rgb(100, 27, 39);
+}

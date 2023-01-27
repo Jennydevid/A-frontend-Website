@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(156, 66, 81);
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    text-align: center;    
+    /* margin: 0px; */
+}
+nav{
+    overflow: hidden;
+    background-color: pink;
+    box-shadow: 0px 1px 20px 0px;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    padding: 10px 25px;
+    margin: 0px 0px 0px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    cursor:grab;
+}
+nav a{
+    text-decoration: none;
+    list-style: none;  
+    margin:  auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(170, 40, 107);
+    font-weight: 600;
+}
+nav a:hover{
+    color: rgb(110, 106, 106);
+    border-bottom: 5px solid rgb(170, 40, 107);
+}
+
+/* .home{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid pink;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: pink;
+    font-weight: 600;
+    
+    transition: background-color .3s;
+}
+
+.home:hover{
+    background-color: pink;
+    color: rgb(138, 37, 64);
+    border: none;
+} */
+.title{
+    color: rgb(240, 202, 208);
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 2px;
+    font-size: 35px;
+    padding-top: 50px;
+}
+div ul{
+    background-color: pink;
+    margin: 30px 50px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    color: rgb(82, 31, 39);
+    box-shadow: 0px 1px 30px 0px ;
+}
+div ul li{
+    display: flex;
+    text-align: justify;
+    border-top: 1px solid rgb(156, 66, 81);
+}
+ nav, .subheading{
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+p b{
+    font-size: 25px;
+    font-family: 'Righteous', 'cursive' !important;
+    letter-spacing: 1px;
+}
+img{
+    margin: 20px;
+    box-shadow: 0px 10px 20px 2px;
+    transition: border-bottom-left-radius .5s, border-top-right-radius .5s, transform .5s, box-shadow .5s;
+}
+img:hover{
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transform: scale(0.9);
+    box-shadow: 0px 1px 30px 0px;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.64);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    color: rgb(195, 81, 100);
+}

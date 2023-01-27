@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fredoka+One&family=Lobster&family=Macondo&family=Righteous&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="fullpage">       
+        <button class="home" onclick="home()" >Home</button>
+        <button class="login" onclick="login()" >Login</button>
+        <div class="content">
+            <h1>Registration Form</h1>
+            <p><h2>About Us</h2> Here you will get to know about the rich heritage of Madhya Pradesh.
+                A collection of tourist places in Madhya Pradesh is explained in detail. One can plan a trip to any of the destination as the list of hotels has also been linked.</p>
+        </div>    
+    </div>
+    <div class="container">
+       <div class="inner">
+       <fieldset>
+        <legend>REGISTER</legend>
+        <form action="index.html" onsubmit="redirect()">
+            <label for="">Firts name: <input id="fname" type="text" name="F_name"  placeholder="fname" required> </label>
+            <br><br>
+            <label for="">Middle name: <input type="text"  id="mname" name="M_name" placeholder="mname" ></label>
+            <br><br>
+            <label for="">Last name: <input type="text"  id="lname" name="L_name" placeholder="lname" required></label>
+            <br><br>
+            <label for="">Contact No.:  <input type="number"  id=""c_num" name="number" placeholder="0000000000" required></label>
+           <br><br>
+            <label for="">email id: <input type="email"  id=""c_num" name="number" placeholder="example@gmail.com" required><br><br>
+            </label>
+            <label for="">Password: <input type="password"  id=""pass" name="key" placeholder="******" required><br><br>
+            </label>
+            <label for="">Confirm Password: <input type="password"  id=""c_pass" name="number" placeholder="******" required><br><br>
+            </label>
+                     
+            <button class="submit" style="margin-left:40%">Submit</button>
+       </fieldset>
+            <!-- <label for="">Remember me</label>
+            <input type="checkbox"><br><br>
+            Forget Password  <br>
+            <a href="#">click here</a> -->
+        </form>
+       </div>
+   </div>
+<script>
+    function home(){
+        location.href = 'index.html'
+    }
+    function login(){
+        location.href = "login.html"
+    }
+    function redirect(){
+        let name = document.getElementById('fname');
+        let password = document.getElementById('password');
+        // window.location.href= "index.html"  
+        if (name.value.trim() == "" ||  password.value.trim() == ""){
+            alert("Please enter the password!!");
+            return false;         
+        }
+        else{
+            true;
+        } 
+    }
+</script>
+</body>
+</html>

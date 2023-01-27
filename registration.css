@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.fullpage{
+    background-image: url(login2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* filter: blur(2px); */
+    /* -webkit-filter: blur(8px); */
+    height: 450px;
+    opacity: 0.9;
+    margin: 0px;
+    /* position: absolute; */
+}
+
+.fullpage .home{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+    width: 100px;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    transition: background-color .3s;
+}
+
+.home:hover{
+    background-color: rgba(54, 101, 30, 0.729);
+}
+
+.fullpage .login{
+    position: relative;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    width: 100px;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    transition: background-color .3s;
+}
+
+.login:hover{
+    background-color: rgba(54, 101, 30, 0.729);
+
+}
+
+.content{
+    opacity: 1;
+    text-align: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    z-index: -1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    /* filter: blur(0px); */
+}
+h1{
+    color: white;
+    align-self: center;
+}
+
+.container{
+    background-color: rgba(54, 101, 30, 0.729);
+    /* height: 500px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+.inner{
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 30%;
+    height: 80%;
+    margin: 30px;
+    width: 50%;
+    text-align: justify;
+}
+fieldset{
+    margin:20px;
+}
+legend{
+    color: white;
+    font-size: 30px;
+}
+label{
+    color: white;
+    font-size: 20px;
+    margin:10px;
+
+}
+input{
+    padding: 8px;
+    /* margin: 5px; */
+}
+input:hover{
+    background-color: aliceblue;
+    border: none;
+}
+
+.submit{
+    background-color: rgba(75, 130, 47, 0.817);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.submit:hover{
+    background-color: rgba(99, 150, 74, 0.817);
+    box-shadow: 0px 2px 5px 1px;
+}
